@@ -1,11 +1,6 @@
 pipeline{
   agent any
     stages {
-      stage ('present'){
-        steps{
-         pwd
-        }
-      }
       stage ('clean'){
         steps{
           sh "mvn clean" 
